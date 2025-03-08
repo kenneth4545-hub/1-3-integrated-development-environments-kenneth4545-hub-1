@@ -1,3 +1,11 @@
+import sys
+import os
+sys.path.append(os.path.abspath(os.path.dirname(__file__)))  # Add the current directory to the sys.path
+import name  # Import the name module
+import sys
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+import name  # This will now work if the directory structure is correct
+import name  # Import the name module
 # common_setup.py
 import subprocess
 import requests
@@ -5,7 +13,6 @@ import json
 import socket
 import os
 import name
-
 def check_internet_connection():
     """Check if there is an active internet connection."""
     try:

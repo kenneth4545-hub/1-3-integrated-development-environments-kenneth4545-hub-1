@@ -1,3 +1,5 @@
+def test_name():
+    assert name.my_name() == "Kenneth John"
 import pytest
 from common_setup import run_test
 
@@ -10,3 +12,4 @@ def test_my_name():
 
 if __name__ == '__main__':
     pytest.main()
+    
